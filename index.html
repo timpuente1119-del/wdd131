@@ -4,14 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>WDD 131 – Dynamic Web Fundamentals – Timothy Puente</title>
     <!--meta description-->
-    <meta name="description" content="This is the home page. Beginning of WDD131 ">
+    <meta name="description" content="This is the home page. Beginning of WDD131 - Dynamic Web Fundamentals. Timothy Puente ">
     <!-- meta author-->
     <meta name="author" content="Timothy Puente">
-    <!-- <link rel="stylesheet" href="styles/rafting.css"> -->
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1> Timothy Puente</h1>
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        <nav>
+            <ul class="navigation">
+                <li><a href="www.linkedin.com/in/tim-puente" title="LinkedIn">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/" title="Canvas">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/2?lang=eng" title="Favore-scripture">Favorite scriptures</a></li>
+                <li><a href="#" title="Final-project">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Timothy Puente</h1>
+        <section class="card">
+            <h2> About Me</h2>
+           
+            <img src="images/profile.jpg" alt="Homepage picture" width="200" class="profile">
+             <p> My name is Tim. I was born in California and grew up in Arizona. I love my family, movies, videogames, and exercising.</p>
+            <h3> Arizona</h3>
+            <figure class="state">
+            <img src="images/arizona_flag-Arizona-StateFlag.jpg.jpg" alt="Arizona State Flag" >
+            <figcaption>Flag of Arizona</figcaption>
+            </figure>
+            <p>Arizona is known for its extremely hot summers and mild winters. However, the northern part of Arizona has pine forests, mountain ranges, and the Grand Canyon. </p>
+        
+        </section>
+        <section class="card">
+            <h2> Web Dev Resources</h2>
+            <ul class="resources">
+                <li><a href="https://squoosh.app" title="LinkedIn">Squoosh</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Styling_web_forms" title="Mozilla">Mozilla</a></li>
+                <li><a href="https://www.w3schools.com/tags/tag_span.asp" title="W3">W3 Schools</a></li>
+                
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy <span id="currentyear"></span> Timothy Puente AZ</p>
+        <p id="lastModified"></p>
+    </footer>
+
 </body>
 </html>
