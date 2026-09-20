@@ -1,0 +1,39 @@
+
+@media  (min-width: 740px){
+    header{
+        background-color: var(--background);
+        color: silver;
+        display: flex;
+        
+        justify-content: space-between;
+    }
+
+    nav ul{
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1rem;
+    }
+
+    nav a:link{
+        text-decoration: none;
+    }
+    body{
+        color: black;
+        
+    }
+
+    .pictures{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 10px;
+    }
+    .navigation{
+        flex-direction: row;
+    }
+
+    #menu{
+        display: none;
+    }
+}
+
+
