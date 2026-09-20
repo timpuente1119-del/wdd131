@@ -1,6 +1,7 @@
-*{
+* {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 :root{
@@ -27,6 +28,9 @@ body{
 
 h1{
     text-align: center;
+    font-family: times, serif;
+	font-size: 2rem;
+	margin-left: 1rem;
 }
 
 main{
@@ -41,7 +45,7 @@ main{
     grid-template-columns: 1fr;
 }
 
-nav{
+nav {
     background-color: var(--background);
     margin: 0 auto;
     color: var(--textcolor1);
@@ -58,24 +62,31 @@ nav ul{
     
 }
 
-nav a{
-    text-decoration: none;
-    font-size: larger;
-    display: block;
-}
-
-nav a:hover{
-    border: 1px solid var(--textcolor);
-}
-
 .navigation{
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     list-style: none;
     background-color: var(--background);
+    color: black;
 
 }
+
+nav a{
+    display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 700;
+}
+
+nav a:hover{
+    border: 1px solid var(--textcolor);
+    background-color: black;
+    color: gold;
+}
+
 
 #menu {
 	font-size: 1.5rem;
@@ -87,11 +98,11 @@ nav a:hover{
 	right: 10px;
 }
 
-#menu::before{
+#menu::before {
     content: "☰";
 }
 
-#menu.open::before{
+#menu.open::before {
     content: "↪";
 }
 
