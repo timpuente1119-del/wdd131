@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+tbody tr:nth-child(odd){
+    background-color: gray;
+    
+}
+
+th{
+    background-color: black;
+    color: white;
+}
+
+th,td{
+    border: 1px solid blue;
+    text-align: center;
+}
+table{
+    border-collapse: collapse;
+    
+}
+
+caption{
+    caption-side: bottom;
+}
+
+
+
