@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+:root{
+    /* Using navy, green, and gold for Montana flag colors */
+    --primarycolor: navy;
+    --sectioncolor: forestgreen;
+    --textcolor: gold;
+
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 75;
+
+    color: var(--textcolor)
+}
+
+header, footer{
+    background-color: var(--primarycolor);
+    color: var(--textcolor);
+    text-align: center;
+}
+
+section {
+    background-color: var(--sectioncolor);
+    display: flex;
+    flex-direction: column;
+    /* This fixed the svg alignment issue. 
+    The div, being the parent container, was forcing
+    picture the the left */
+    text-align: center;
+
+}
+/* Ran into an issue in aligning the svg image. 
+The following was the solution:
+Option 3: Center the Parent Element InsteadIf the <picture> element is simply sitting inside a larger container (like a <div> or a <section>) that is aligned to the left, the picture tag will just hug that left wall. Try adding text-align: center; to whatever outer container holds your weather elements.If it's still locked to the left, please reply with a quick snippet of your HTML structure for these weather elements. Seeing exactly where your classes (.mobile-weather) are placed will reveal exactly why the browser is ignoring the centering rules. */
+picture .mobile-weather {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+
+}
+
+/* .large-weather::before{
+    display: none;
+} */
+/* picture .mobile-weather img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+} */
+section h2{
+    text-align: center;
+    /* the border is used to visualize the h2 headers */
+    /* border: 1px solid black; */
+}
+
+section li{
+    justify-content: center;
+    text-align: center;
+    /* align-items: center; */
+    /* border: 1px solid blue; */
+}
+
+

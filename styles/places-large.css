@@ -1,0 +1,42 @@
+@media screen and (min-width: 1000px){
+
+    div{
+        position: relative;
+    }
+
+    .data{
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+        border: 1px solid black;
+    }
+
+    .data ul{
+        list-style-type: none;
+    }
+
+    .weather{
+        position: absolute;
+        bottom: 4rem;
+        right: 4rem;
+        border: 1px solid black;
+        
+    }
+
+    .weather ul{
+        list-style-type: none;
+    }
+
+    .mobile-weather img{
+        display: none;
+    }
+
+    .header-weather{
+        display:flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+    .large-weather::after{
+        content: "⛅";
+    }
+}
