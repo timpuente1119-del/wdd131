@@ -71,7 +71,7 @@ section h2{
     /* border: 1px solid black; */
 }
 
-section li{
+section ul{
     justify-content: center;
     text-align: center;
     /* align-items: center; */
