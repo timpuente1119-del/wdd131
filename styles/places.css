@@ -7,8 +7,11 @@
 :root{
     /* Using navy, green, and gold for Montana flag colors */
     --primarycolor: navy;
-    --sectioncolor: forestgreen;
+    --sectioncolor: darkgreen;
+    --sectioncolor2: gold;
     --textcolor: gold;
+    --textcolor2: lightblue;
+    --textcolor3: black;
 
 }
 
@@ -19,18 +22,20 @@ body{
   font-style: normal;
   font-variation-settings:
     "wdth" 75;
+    color: var(--textcolor3)
 
-    color: var(--textcolor)
+    
 }
 
 header, footer{
     background-color: var(--primarycolor);
     color: var(--textcolor);
     text-align: center;
+    color: var(--textcolor)
 }
 
 section {
-    background-color: var(--sectioncolor);
+    background-color: var(--sectioncolor2);
     display: flex;
     flex-direction: column;
     /* This fixed the svg alignment issue. 
