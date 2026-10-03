@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --background: black;
+    --textcolor1: gold;
+    --textcolor2: black;
+}
+/* mobile */
+header{
+    background-color: var(--background);
+    color: var(--textcolor1)
+    
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 75;
+    color: var(--textcolor2)
+}
+
+h1{
+    text-align: center;
+    font-family: times, serif;
+	font-size: 2rem;
+	margin-left: 1rem;
+}
+
+main{
+    max-width: 800px;
+    margin: 0 auto;
+    justify-content: center;
+    
+}
+
+.pictures{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    text-align: center;
+}
+
+.temple-card img{
+    /* ran into lazy loading issues. Using AI, the problem was determined to be with this rule selector. */
+    /* The solution is as follows: */
+    display: block;
+    max-width: 100%;
+    width: 600px;
+    aspect-ratio: 3 / 2;
+    height: auto;
+}
+
+nav {
+    background-color: var(--background);
+    margin: 0 auto;
+    color: var(--textcolor1);
+    justify-content: center;
+
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.navigation{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+    background-color: var(--background);
+    color: black;
+
+}
+
+.navigation a{
+    display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 700;
+}
+
+nav a:hover{
+    border: 1px solid var(--textcolor1);
+    background-color: var(--background);
+    color: gold;
+}
+
+
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background-color: gray;
+	color: #000;
+ 	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "↪";
+}
+
+.open a{
+    display: block;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temples week02 project</title>
+    <meta name="description" content="Making an adjustable page with a working hamburger menu button">
+    <meta name="author" content="Timothy Puente-WDD131">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <p>Temple Album</p>
+        <button id="menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" id="Home">Home</a></li>
+                <li><a href="#" id="Old">Old</a></li>
+                <li><a href="#" id="New">New</a></li>
+                <li><a href="#" id="Large">Large</a></li>
+                <li><a href="#" id="Small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>My Favorite Temples</h1>
+        <div id="pics" class="pictures"></div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Timothy Puente AZ</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
