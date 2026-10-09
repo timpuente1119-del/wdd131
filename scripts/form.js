@@ -33,3 +33,19 @@ const select = document.querySelector('#product')
 let productsHTML = products.map(product => `<option value="${product.id}">${product.name}</option>`).join('');
 
 select.innerHTML = productsHTML;
+
+// was going to add an event listener for click, but AI advised using DOMContentLoaded
+
+document.addEventListener('DOMContentLoaded', () => {
+        
+    // running into an issue with Null being loaded into the loadCounter the 1st time. AI advised doing this:
+    // loadCounter = loadCounter ? parseInt(loadCounter) : 0; This is basically an if statement. If it's null, make it 0. Otherwise, turn the text into a number.
+        let loadCounter = localStorage.getItem('completeReview');
+
+        loadCounter = loadCounter ? parseInt(loadCounter) : 0;
+
+        loadCounter ++;
+        
+        localStorage.setItem("completeReview", loadCounter)
+
+});
