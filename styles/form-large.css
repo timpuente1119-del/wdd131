@@ -1,0 +1,7 @@
+@media screen and (min-width: 400px){
+
+    header, main, footer, #write {
+        max-width: 64rem;
+        margin:auto;
+    }
+}

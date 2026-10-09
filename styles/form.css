@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* ----HEADER ---- */
+header {
+    padding: .5rem 2%;
+    background-color: purple;
+    text-align: center;
+    color: white;
+    max-width: 400px;
+
+}
+
+/* ----Body ---- */
+
+body{
+    font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 75;
+}
+/* ----FORM ---- */
+
+form{
+    background-color: ivory;
+    padding: 2rem;
+    
+}
+
+legend{
+    font-size: larger;
+}
+
+fieldset{
+    gap:5px;
+    padding: 5px;
+    border: none;
+}
+
+/* ----MAIN ---- */
+main{
+    max-width: 400px;
+}
+
+#write{
+    width: 100%;
+    max-width: 300px;
+    height: 150px;
+    min-height: 80px;
+    
+}
+
+.features{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 15px;
+
+}
+
+
+
+/* ----RATING STARS ---- */
+
+.star {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: left;
+}
+
+.star > input{
+    display: none;
+}
+.star > label {
+	color: gold;
+	width: 30px;
+	height: 30px;
+	font-size: 2rem;
+	margin-left: 5px;
+	display: flex;
+	align-items: center;
+	caret-color: rgba(0, 0, 0, 0); /* remove blinking cursor*/
+}
+
+.star > label:hover {
+	color: #000;
+}
+
+.star > label::before {
+	content: "\2606";
+}
+
+.star input:checked ~ label::before {
+	content: "\2605";
+}
+
+footer{
+    padding: .5rem 2%;
+    background-color: purple;
+    text-align: center;
+    color: white;
+    max-width: 400px;
+}
