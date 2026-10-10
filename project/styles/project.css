@@ -97,6 +97,25 @@ figcaption{
     font: bold;
 }
 
+.experimental-hero{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+/* The following is meant to handle the overflow of the steps text */
+.experimental-hero img{
+    display: block;
+    width: 100%;
+    height: auto;
+    /* AI advised using this code help with transition for hover */
+    transition: transform .3s ease; 
+}
+
+.experimental-step{
+    width: 100%;
+    padding: 1.5rem;
+}
 
 /* ----navigation bar */
 
