@@ -1,0 +1,31 @@
+@media screen and (min-width: 768px){
+
+    * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    }
+
+
+
+    .navigation{
+        
+        flex-direction: row;
+        justify-content: space-evenly;
+	    list-style: none;
+	    
+    }
+
+    
+
+    .navigation a {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #menu{
+        display: none;
+    }
+}
+
+
