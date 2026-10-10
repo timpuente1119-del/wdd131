@@ -31,15 +31,74 @@ h1{
 	font-size: 2rem;
 	margin-left: 1rem;
 }
+/* --- hero image and links */
+.hero{
+    position: relative;
+    
+    
+}
 
-nav ul{
-    list-style: none;
+.hero picture img {
+    display: block;
+    width: 100%;
+    height: auto;
+    /* AI advised using this code help with transition for hover */
+    transition: transform .3s ease; 
+}
+
+.hero div {
+    position: absolute;
+    text-align: center;
+    /* taking advice from AI to solve alignment issues */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     
 }
+
+.hero h2{
+    /* taking advice from AI to solve alignment issues */
+    
+    width: 100%;
+    
+    opacity: .8;
+    background-color: var(--primary);
+    padding: 5px;
+
+}
+
+.hero p{
+    /* taking advice from AI to solve alignment issues */
+    
+    width: 100%;
+   
+    opacity: .8;
+    background-color: var(--primary);
+    padding: 5px;
+}
+
+div img:hover{
+    box-shadow: 5px 5px;
+    
+    background-color: black;
+    /* the code below was suggested by AI. This makes the picture bigger when hovering.  */
+    transform: scale(1.05);
+}
+
+figcaption{
+    opacity: .8;
+    background-color: var(--primary);
+    padding: 5px;
+    font: bold;
+}
+
+
+/* ----navigation bar */
 
 .navigation{
     display: flex;
