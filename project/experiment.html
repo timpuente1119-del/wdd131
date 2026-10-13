@@ -16,9 +16,9 @@
     <title>Silver Miner - Experimental Setup</title>
 </head>
 <body>
-    <headr>
+    <header>
     <h1>Experimental Setup</h1>
-     <button id="menu"></button>
+     <button id="menu" name="menu"></button>
         <nav>
             <ul class="navigation">
                 <li><a href="homepage.html" id="home">Home</a></li>
@@ -26,14 +26,14 @@
                 <li><a href="experiment.html" id="experimental-setup">Experimental Setup</a></li>
             </ul>
         </nav>
-    </headr>
+    </header>
     <main>
         <section class="experimental-hero">
             <picture>
                 <source media="(min-width: 768px )" srcset="images/experimental-hero-large.webp" width="1500" height="750" loading="lazy">
                 <img src="images/experimental-hero-mobile.webp" alt="Experimental Mobile background" loading="lazy">
             </picture>
-            <div class="eperimental-steps">
+            <div class="experimental-steps">
                 <h2>General Steps for the Experiment</h2>
                 <ul >
                     <li>
@@ -46,30 +46,40 @@
                        <p> • Time Required: A few hours (the dissolution rate maxes out at approximately 1.62 mol/m²⋅h).</p>
                     </li>
                     <li>
-                        2. Separation Phase (Precipitation)
+                        <h3>2. Separation Phase (Precipitation)</h3>
 
-                        • Equipment Needed: Glass funnel, filter paper or a vacuum filtration system, and separation glassware.
-                        • Chemicals Used: Ethyl acetate solvent.
-                        • Process: Ethyl acetate is poured into the liquid mixture. This causes the newly formed silver carboxylates to drop out of the solution into a solid form while leaving the unreacted fatty acids behind to be recycled. The solid silver precipitate is then isolated via filtration.
-                        • Time Required: 15 to 30 minutes for rapid precipitation and physical separation.
+                        <p>• Equipment Needed: Glass funnel, filter paper or a vacuum filtration system, and separation glassware.</p>
+                        <p>• Chemicals Used: Ethyl acetate solvent.</p>
+                        <p>• Process: Ethyl acetate is poured into the liquid mixture. This causes the newly formed silver carboxylates to drop out of the solution into a solid form while leaving the unreacted fatty acids behind to be recycled. The solid silver precipitate is then isolated via filtration.</p>
+                        <p>• Time Required: 15 to 30 minutes for rapid precipitation and physical separation.</p>
                     </li>
                     <li>
 
-                        3. Recovery Phase (Photochemical Reduction)
+                        <h3>3. Recovery Phase (Photochemical Reduction)</h3>
 
-                        • Equipment Needed: Dual 30 W Compact Fluorescent Light (CFL) lamps (emitting 400–650 nm wavelengths) and a transparent holding vial.
-                        • Chemicals Used: Ethanol (alcohol) solvent.
-                        • Process: The isolated solid silver carboxylate is suspended in an ethanol medium. The suspension is exposed directly to the specified light wavelengths. This light-driven reduction breaks down the carboxylate compound, leaving behind pure elemental silver powder.
-                        • Time Required: Several hours to overnight depending on the volume of the sample
+                        <p>• Equipment Needed: Dual 30 W Compact Fluorescent Light (CFL) lamps (emitting 400–650 nm wavelengths) and a transparent holding vial.</p>
+                       <p>• Chemicals Used: Ethanol (alcohol) solvent.</p>
+                        <p>• Process: The isolated solid silver carboxylate is suspended in an ethanol medium. The suspension is exposed directly to the specified light wavelengths. This light-driven reduction breaks down the carboxylate compound, leaving behind pure elemental silver powder.</p>
+                        <p>• Time Required: Several hours to overnight depending on the volume of the sample</p>
                     </li>
+
+                     
                 </ul>
-                
-                
+                <a href="https://www.sciencedirect.com/science/article/pii/S1385894725029559?via%3Dihub" alt="Silver Extraction Journal Article">Reference Source</a>
                 
             </div>
 
 
             </section>
+            <!-- Used AI for learning how to use save files for submission -->
+            <form action="https://formspree.io/f/moejnyal" method="POST" enctype="multipart/form-data" class="exp-submit">
+                <fieldset>    
+                    <legend>Please send your results</legend>
+                    <input type="file" id="results" name="results" accept=".pdf">
+                    <label for="results">Upload your experiment results (PDF format)</label>
+                    <button type="submit" >Upload Results</button>
+                </fieldset>
+            </form>
     </main>
 
     <footer>

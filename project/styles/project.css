@@ -5,6 +5,7 @@
 
 :root{
     --primary: darkblue;
+    --primary2: silver;
     --textcolor: silver;
 }
 
@@ -96,7 +97,7 @@ figcaption{
     padding: 5px;
     font: bold;
 }
-
+/* ---Experimental Page */
 .experimental-hero{
     display: flex;
     flex-direction: column;
@@ -112,9 +113,22 @@ figcaption{
     transition: transform .3s ease; 
 }
 
-.experimental-step{
+.experimental-steps{
     width: 100%;
     padding: 1.5rem;
+}
+
+.experimental-steps a{
+    background-color: var(--primary2);
+}
+
+.exp-submit fieldset{
+    display: flex;
+    flex-direction: column;
+}
+
+.exp-submit button{
+    align-self: flex-start;
 }
 
 /* ----navigation bar */
