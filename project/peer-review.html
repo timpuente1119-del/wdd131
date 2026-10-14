@@ -37,7 +37,84 @@
         </section>
 
         <form action="https://formspree.io/f/moejnyal" method="POST" class="peer-form">
+            <h2>Peer Review Input</h2>
+            <!-- this is the branch. if the user choose to reveiw the current experimental setup, the we make  -->
+             <fieldset class="peer-branch">
+                <h3>Are you peer reviewing the current experimental set-up, or one that was submitted?</h3>
+               <label for="current">
+                    <input type="radio" id="current" name="set-up" value="yes" onclick="selectedChoice('current-section','submitted-section',true)">
+                    Current
+               </label> 
 
+               <label for="submitted">
+                    <input type="radio" id="submitted" name="set-up" value="no" onclick="selectedChoice('current-section','submitted-section', false)">
+                    Submitted
+               </label>
+             </fieldset>
+
+             <!-- these are the inputs for the current set-up -->
+             <div id="current-section" class="hidden-section">
+
+                <fieldset class="steps">
+                    <legend>Which steps did you struggle with?</legend>
+                    <label for="stepOne"><input type="checkbox" id="stepOne" name="firstStep" value="yes" >1</label>
+                    <label for="stepTwo"><input type="checkbox" id="stepTwo" name="secondStep" value="yes" >2</label>
+                    <label for="stepThree"><input type="checkbox" id="stepThree" name="thirdStep" value="yes" >3</label>
+                </fieldset>
+
+                <fieldset>
+                <legend>What would you have done differently, and why?</legend>
+                <textarea id="current-comment" name="review" required></textarea>
+                <label for="current-comment"></label>
+                </fieldset>
+             </div>
+
+            <!-- these are the inputs for submitted set-ups -->
+             <div id="submitted-section" class="hidden-section">
+                
+                <fieldset class="submissions">
+                    <legend>Which submission did you peer review?</legend>
+                    <label for="submission">
+                        <select id="submission" name="submission" required>
+                            <option value="" disabled selected>Select a submission</option>
+                        </select>
+                    </label>
+
+                </fieldset>
+
+                <fieldset class="steps">
+                    <legend>Which steps did they do differently from the current steps?</legend>
+                    <label for="stepOne"><input type="checkbox" id="subStepOne" name="firstStep" value="yes" >1</label>
+                    <label for="stepTwo"><input type="checkbox" id="subStepTwo" name="secondStep" value="yes" >2</label>
+                    <label for="stepThree"><input type="checkbox" id="subStepThree" name="thirdStep" value="yes" >3</label>
+                </fieldset>
+ 
+                <fieldset>
+                    <legend>Did they give a clear explanation why they did it differently?</legend>
+                    <label for="Yes"><input type="radio" id="Yes" name="choice" value="yes"required onclick="selectedChoice('clarity','non-clarity', true)">Yes</label>
+                    <label for="No"><input type="radio" id="No" name="choice" value="no"required onclick="selectedChoice('clarity','non-clarity', false)">no</label>
+                    
+                </fieldset>
+                <div id="clarity" class="hidden-section">
+                    <fieldset>
+                        <legend>How did the differences change the experiement?</legend>
+                        <textarea id="clarity-comment" name="difference-review" required></textarea>
+                        <label for="clarity-comment"></label>
+                    </fieldset>
+                </div>
+                
+                <div id="non-clarity" class="hidden-section">
+                    <legend>What were you confused about?</legend>
+                    <textarea id="non-clarity-comment" name="difference-review" required></textarea>
+                    <label for="non-clarity-comment"></label>
+                </div>
+                <fieldset>
+                    <legend>What would you have done differently, and why?</legend>
+                    <textarea id="submitted-comment" name="review" required></textarea>
+                    <label for="submitted-comment"></label>
+                </fieldset>
+             </div>
+             <input type="submit" value="Upload Peer Review">
         </form>
 
     </main>

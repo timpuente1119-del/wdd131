@@ -131,6 +131,31 @@ figcaption{
     align-self: flex-start;
 }
 
+/* ---peer review--- */
+
+.hidden-section{
+    display: none;
+}
+
+#clarity-comment, 
+#non-clarity-comment, 
+#submitted-comment, 
+#current-comment{
+    width: 100%;
+    max-width: 300px;
+    height: 150px;
+    min-height: 80px;
+}
+
+.steps{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 15px;
+}
+
+
+
 /* ----navigation bar */
 
 .navigation{
