@@ -22,7 +22,7 @@
     <main>
         <form method="get" action="review.html" class="wfp">
             <fieldset class="products">
-                <legend>Product Name</legend>
+                <legend>Product Name (Required)</legend>
                 <label for="product">
                     <select id="product" name="product" required>
                         <option value="" disabled selected>Select a Product...</option>
@@ -31,7 +31,7 @@
             </fieldset>
 
             <fieldset class="star">
-                <legend>Overall Rating</legend>
+                <legend>Overall Rating (Required)</legend>
                 <input type="radio" id="onestar" name="star" value="1" required>
                 <label for="onestar"></label>
                 <input type="radio" id="twostar" name="star" value="2" required>
@@ -45,8 +45,8 @@
             </fieldset>
 
             <fieldset class="installation">
-                <legend>Date of Installation</legend>
-                <label for="install"><input type="date" id="install" name="installation-date"></label>
+                <legend>Date of Installation (Required)</legend>
+                <label for="install"><input type="date" id="install" name="installation-date" required></label>
             </fieldset>
 
             <fieldset class="features">
